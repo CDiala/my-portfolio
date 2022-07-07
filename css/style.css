@@ -22,6 +22,12 @@
   font-weight: 900;
 }
 
+@font-face {
+  font-family: "Roboto";
+  src: url(../font/Roboto-LightItalic.ttf) format("truetype");
+  font-weight: 300;
+}
+
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -114,8 +120,8 @@ header,
   color: var(--color-primary);
 }
 
-/* main */
-.inner-padding {
+/* info section */
+.block {
   padding: 55px calc((100vw - 820px) / 2);
 }
 
@@ -126,9 +132,14 @@ figcaption {
 
 .info-section h2 {
   font-size: 36px;
+  text-align: center;
+}
+
+.info-section h2,
+.quote figcaption {
+  color: var(--color-dark);
   font-weight: 900;
   margin-bottom: 55px;
-  text-align: center;
 }
 
 .info-section img {
@@ -137,8 +148,17 @@ figcaption {
   transition: all ease-in-out 0.2s;
 }
 
-figure:hover img {
+.info-card:hover {
+  cursor: pointer;
+}
+
+.info-card:hover img {
   transform: scale(1.15);
+}
+
+.info-card:hover figcaption {
+  color: var(--color-secondary);
+  font-weight: 500;
 }
 
 .img-cont {
@@ -149,4 +169,22 @@ figure:hover img {
   max-height: fit-content;
   overflow: hidden;
   width: 166px;
+}
+
+/* quote section */
+.quote-section {
+  background-color: #e5e7eb;
+  padding-top: 137px;
+  padding-bottom: 109px;
+}
+
+.quote-section blockquote q {
+  font-size: 36px;
+  font-weight: 300;
+}
+
+.quote figcaption {
+  margin: 0;
+  margin-top: 14px;
+  text-align: right;
 }
