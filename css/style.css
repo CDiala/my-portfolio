@@ -234,3 +234,10 @@ header {
   background-color: #bbbaa1;
   color: rgb(120, 14, 14);
 }
+
+/* footer */
+.footer {
+  background-color: var(--color-dark);
+  padding: 40px 0;
+  text-align: center;
+}
