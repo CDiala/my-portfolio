@@ -8,19 +8,19 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
+    <header id="top">
       <div class="box-container">
         <nav class="flex flex-row">
           <a href="/" class="img-logo">Buzz</a>
           <ul class="flex flex-row nav-list">
             <li>
-              <a href="#about-me">About me</a>
+              <a href="#info">About me</a>
             </li>
             <li>
-              <a href="#fave-quote">Favorite Quote</a>
+              <a href="#quote">Favorite Quote</a>
             </li>
             <li>
-              <a href="">Contact me</a>
+              <a href="#action">Contact me</a>
             </li>
           </ul>
         </nav>
@@ -45,7 +45,7 @@
       </div>
     </header>
     <main>
-      <section id="about-me" class="block info-section">
+      <section id="info" class="block info-section">
         <h2>Some fun stuff about me</h2>
         <div class="flex flex-row info.container">
           <figure class="info-card">
@@ -90,7 +90,7 @@
           </figure>
         </div>
       </section>
-      <section id="fave-quote" class="block quote-section">
+      <section id="quote" class="block quote-section">
         <figure class="quote">
           <blockquote>
             <q>
@@ -102,7 +102,7 @@
           <figcaption>-Jide</figcaption>
         </figure>
       </section>
-      <section class="action-section">
+      <section id="action" class="action-section">
         <section class="flex flex-row action-container">
           <div>
             <h2>Want to request my service?</h2>
@@ -112,5 +112,10 @@
         </section>
       </section>
     </main>
+    <aside class="scroll-section">
+      <div class="go-up">
+        <a class="flex flex-row" href="#top">&uarr;</a>
+      </div>
+    </aside>
   </body>
 </html>

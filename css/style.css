@@ -70,7 +70,8 @@ header {
 }
 
 .img-logo,
-.nav-list a {
+.nav-list a,
+.go-up a {
   flex: 1;
   text-decoration: none;
 }
@@ -144,7 +145,6 @@ header {
 .info-section img {
   border-radius: 10px;
   object-fit: cover;
-  transition: all ease-in-out 0.2s;
 }
 
 .info-card:hover {
@@ -158,6 +158,11 @@ header {
 .info-card:hover figcaption {
   color: var(--color-secondary);
   font-weight: 500;
+}
+
+.info-section img,
+.info-card figcaption {
+  transition: all ease-in-out 0.3s;
 }
 
 .img-cont {
@@ -208,4 +213,24 @@ header {
 
 .action-section {
   padding: 100px calc((100vw - 1024px) / 2);
+}
+
+/* back-to-top */
+.go-up a {
+  background-color: rgb(120, 14, 14);
+  border-radius: 50%;
+  color: #e1e1d5;
+  font-size: 24px;
+  height: 50px;
+  justify-content: center;
+  position: fixed;
+  right: 5vw;
+  top: 90vh;
+  transition: all ease-in-out 0.2s;
+  width: 50px;
+}
+
+.go-up:hover a {
+  background-color: #bbbaa1;
+  color: rgb(120, 14, 14);
 }
