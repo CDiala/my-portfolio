@@ -82,6 +82,19 @@ header {
   list-style: none;
 }
 
+.nav-list li:hover {
+  border-bottom: 1px solid #1beb65;
+}
+
+.nav-list a:hover {
+  color: #87b6ff;
+}
+
+.nav-list li,
+.nav-list a {
+  transition: all ease-in-out 0.15s;
+}
+
 .hero-section {
   margin: 123px 0;
   column-gap: 53px;
@@ -108,16 +121,23 @@ header {
   cursor: pointer;
   font-weight: 500;
   padding: 8px 20px;
+  transition: all ease-in-out 0.2s;
   width: 130px;
 }
 
 .btn-primary {
   background-color: var(--color-secondary);
-  border: 1px solid var(--color-secondary);
+  border: 2px solid var(--color-secondary);
 }
 
 .btn-outline {
   border: 2px solid var(--color-primary);
+}
+
+.btn:hover {
+  border: 2px solid #fff;
+  color: #ffffff;
+  background-color: #0647b2;
 }
 
 /* info section */
@@ -166,7 +186,7 @@ header {
 }
 
 .img-cont {
-  border: 2px solid var(--color-secondary);
+  border: 3px solid var(--color-secondary);
   border-radius: 14px;
   display: flex;
   height: 166px;
@@ -218,6 +238,7 @@ header {
 /* back-to-top */
 .go-up a {
   background-color: rgb(120, 14, 14);
+  border: 3px solid rgb(120, 14, 14);
   border-radius: 50%;
   color: #e1e1d5;
   font-size: 24px;
