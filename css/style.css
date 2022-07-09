@@ -54,6 +54,12 @@ header {
 .img-logo {
   font-size: 24px;
   font-weight: 500;
+  transition: all ease-in-out 0.18s;
+}
+
+.img-logo:hover {
+  color: #ffc700;
+  transform: scale(1.05);
 }
 
 .flex {
@@ -77,8 +83,8 @@ header {
 
 .nav-list {
   column-gap: 20px;
-  padding: 0;
   list-style: none;
+  padding: 0;
 }
 
 .nav-list li:hover {
@@ -95,8 +101,8 @@ header {
 }
 
 .hero-section {
-  margin: 123px 0;
   column-gap: 53px;
+  margin: 123px 0;
 }
 
 .hero-intro {
@@ -106,6 +112,41 @@ header {
 .hero-title {
   font-size: 48px;
   font-weight: 900;
+  line-height: 1.18;
+}
+
+.hero-section .hi-5 {
+  animation-name: hello;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  display: inline-flex;
+  margin-top: -6px;
+  margin-left: 20px;
+  position: absolute;
+  transition: all 1s;
+  z-index: 9999;
+}
+
+@keyframes hello {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(22.5deg);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  75% {
+    transform: rotate(22.5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.hero-section:hover .hi-5 {
+  transform: rotate(10deg);
 }
 
 .nav-list a,
@@ -134,9 +175,9 @@ header {
 }
 
 .btn:hover {
+  background-color: #254e93;
   border: 2px solid #fff;
-  color: #ffffff;
-  background-color: #0647b2;
+  color: #fff;
 }
 
 /* info section */
@@ -185,8 +226,8 @@ header {
 }
 
 .img-cont {
-  border: 3px solid var(--color-secondary);
   border-radius: 14px;
+  border: 3px solid var(--color-secondary);
   display: flex;
   height: 166px;
   max-height: fit-content;
@@ -197,8 +238,8 @@ header {
 /* quote section */
 .quote-section {
   background-color: #e5e7eb;
-  padding-top: 120px;
   padding-bottom: 120px;
+  padding-top: 120px;
 }
 
 .quote-section blockquote {
@@ -206,15 +247,13 @@ header {
 }
 
 .quote-section q {
-  /* color: #1f2937; */
   font-size: 36px;
   font-weight: 300;
 }
 
 .quote figcaption {
-  margin: 0;
   margin-right: 14px;
-  /* margin-top: 14px; */
+  margin: 0;
   text-align: right;
 }
 
@@ -237,8 +276,8 @@ header {
 /* back-to-top */
 .go-up a {
   background-color: rgb(120, 14, 14);
-  border: 3px solid rgb(120, 14, 14);
   border-radius: 50%;
+  border: 3px solid rgb(120, 14, 14);
   color: #e1e1d5;
   font-size: 24px;
   height: 50px;
@@ -252,7 +291,6 @@ header {
 
 .go-up:hover a {
   background-color: #e2e2d4;
-  /* background-color: #bbbaa1; */
   color: rgb(120, 14, 14);
 }
 
