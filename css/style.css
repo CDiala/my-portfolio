@@ -72,7 +72,6 @@ header {
 .img-logo,
 .nav-list a,
 .go-up a {
-  flex: 1;
   text-decoration: none;
 }
 
@@ -252,7 +251,8 @@ header {
 }
 
 .go-up:hover a {
-  background-color: #bbbaa1;
+  background-color: #e2e2d4;
+  /* background-color: #bbbaa1; */
   color: rgb(120, 14, 14);
 }
 
